@@ -93,11 +93,11 @@ cell.forEach((e) => {
         setTimeout(() => {
           tarjeton.classList.remove("animate__bounceInUp");
           tarjeton.classList.add("animate__bounceOutDown");
-        }, 100);
+        }, 5000);
 
         setTimeout(() => {
           location.assign("/index.html");
-        }, 1500);
+        }, 5500);
       });
     }
   });

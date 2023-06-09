@@ -65,14 +65,14 @@ rBtn.addEventListener("click", () => {
       break;
 
     case 2:
-      img.innerHTML = '<img src="/img/logoBingo.png"/>';
+      img.innerHTML = '<img src="/img/bolatas.png"/>';
       txt.innerHTML = "<p>En cada ronda un número diferente se sorteará.</p>";
       lBtn.innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
       rBtn.innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
       break;
 
     case 3:
-      img.innerHTML = '<img src="/img/logoBingo.png"/>';
+      img.innerHTML = '<img src="/img/inst-3.png"/>';
       txt.innerHTML =
         "<p>El objetivo del juego es marcar los números dando click en ellos según se vayan dictando.</p>";
       lBtn.innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
@@ -80,7 +80,7 @@ rBtn.addEventListener("click", () => {
       break;
 
     case 4:
-      img.innerHTML = '<img src="/img/logoBingo.png"/>';
+      img.innerHTML = '<img src="/img/inst-4.png"/>';
       txt.innerHTML =
         "<p>Debes completar la palabra BINGO en la parte inferior del tablero de juego.</p>";
       lBtn.innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
@@ -88,9 +88,9 @@ rBtn.addEventListener("click", () => {
       break;
 
     case 5:
-      img.innerHTML = '<img src="/img/logoBingo.png"/>';
+      img.innerHTML = '<img src="/img/inst-5.png"/>';
       txt.innerHTML =
-        "<p>Desbloquearás una nueva letra con cada fila o columna que completes, si completas 5 líneas, habrás, habrás conseguido la palabra BINGO y ganarás el juego.</p>";
+        "<p>Desbloquearás una nueva letra con cada fila o columna que completes. <br>Si completas 5 líneas, habrás conseguido la palabra BINGO y ganarás el juego.</p>";
       lBtn.innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
       rBtn.innerHTML = '<i class="fa-solid fa-check"></i>';
       break;
@@ -122,14 +122,14 @@ lBtn.addEventListener("click", () => {
       break;
 
     case 2:
-      img.innerHTML = '<img src="/img/logoBingo.png"/>';
+      img.innerHTML = '<img src="/img/bolatas.png"/>';
       txt.innerHTML = "<p>En cada ronda un número diferente se sorteará.</p>";
       lBtn.innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
       rBtn.innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
       break;
 
     case 3:
-      img.innerHTML = '<img src="/img/logoBingo.png"/>';
+      img.innerHTML = '<img src="/img/inst-3.png"/>';
       txt.innerHTML =
         "<p>El objetivo del juego es marcar los números dando click en ellos según se vayan dictando.</p>";
       lBtn.innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
@@ -137,7 +137,7 @@ lBtn.addEventListener("click", () => {
       break;
 
     case 4:
-      img.innerHTML = '<img src="/img/logoBingo.png"/>';
+      img.innerHTML = '<img src="/img/inst-4.png"/>';
       txt.innerHTML =
         "<p>Debes completar la palabra BINGO en la parte inferior del tablero de juego.</p>";
       lBtn.innerHTML = '<i class="fa-solid fa-arrow-left"></i>';
@@ -145,7 +145,7 @@ lBtn.addEventListener("click", () => {
       break;
 
     case 5:
-      img.innerHTML = '<img src="/img/logoBingo.png"/>';
+      img.innerHTML = '<img src="/img/inst-5.png"/>';
       txt.innerHTML =
         "<p>Desbloquearás una nueva letra con cada fila o columna que completes, si completas 5 líneas, habrás, habrás conseguido la palabra BINGO y ganarás el juego.</p>";
       lBtn.innerHTML = '<i class="fa-solid fa-arrow-left"></i>';

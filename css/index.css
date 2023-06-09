@@ -79,12 +79,15 @@ body {
 }
 
 .modal-image {
-  width: 300px;
+  width: 250px;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-image img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
