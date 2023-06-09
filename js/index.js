@@ -32,6 +32,7 @@ let img = document.querySelector(".modal-image");
 let txt = document.querySelector(".modal-input");
 let lBtn = document.querySelector(".left");
 let rBtn = document.querySelector(".right");
+let pasos;
 
 //Mostrar-Ocultar Instrucciones
 
@@ -40,15 +41,14 @@ instBtn.addEventListener("click", () => {
 
   setTimeout(() => {
     modal.classList.add("show-inst-modal");
-    pasos == 1;
+    img.innerHTML = '<img src="/img/logoBingo.png"/>';
+    txt.innerHTML =
+      "<p>Bienvenido al Bingo Seguro. <br> Al iniciar el juego recibirás un tarjetón.</p>";
   }, 300);
 });
 
 //Navegar por las instrucciones
-
-let pasos = 1;
-img.innerHTML = '<img src="/img/logoBingo.png"/>';
-txt.innerHTML = "<p>Al iniciar el juego recibirás un tarjetón.</p>";
+pasos = 1;
 
 //boton derecho
 rBtn.addEventListener("click", () => {
@@ -58,7 +58,8 @@ rBtn.addEventListener("click", () => {
   switch (pasos) {
     case 1:
       img.innerHTML = '<img src="/img/logoBingo.png"/>';
-      txt.innerHTML = "<p>Al iniciar el juego recibirás un tarjetón.</p>";
+      txt.innerHTML =
+        "<p>Bienvenido al Bingo Seguro. <br> Al iniciar el juego recibirás un tarjetón.</p>";
       lBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
       rBtn.innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
       break;
@@ -95,11 +96,14 @@ rBtn.addEventListener("click", () => {
       break;
 
     default:
-      modal.classList.remove("show-inst-modal");
-      setTimeout(() => {
-        instBg.classList.remove("show-cont-inst");
-      }, 300);
-      break;
+      if (pasos > 5) {
+        modal.classList.remove("show-inst-modal");
+        setTimeout(() => {
+          instBg.classList.remove("show-cont-inst");
+          rBtn.innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
+        }, 300);
+        return (pasos = 1);
+      }
   }
 });
 
@@ -111,7 +115,8 @@ lBtn.addEventListener("click", () => {
   switch (pasos) {
     case 1:
       img.innerHTML = '<img src="/img/logoBingo.png"/>';
-      txt.innerHTML = "<p>Al iniciar el juego recibirás un tarjetón.</p>";
+      txt.innerHTML =
+        "<p>Bienvenido al Bingo Seguro. <br> Al iniciar el juego recibirás un tarjetón.</p>";
       lBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
       rBtn.innerHTML = '<i class="fa-solid fa-arrow-right"></i>';
       break;
@@ -148,13 +153,13 @@ lBtn.addEventListener("click", () => {
       break;
 
     default:
-      modal.classList.remove("show-inst-modal");
-      setTimeout(() => {
-        instBg.classList.remove("show-cont-inst");
-      }, 300);
-
-      break;
+      if (pasos < 1) {
+        modal.classList.remove("show-inst-modal");
+        setTimeout(() => {
+          instBg.classList.remove("show-cont-inst");
+          lBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+        }, 300);
+        return (pasos = 1);
+      }
   }
-
-  pasos == 1;
 });
