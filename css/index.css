@@ -1,0 +1,290 @@
+/* body */
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  background-image: url(/img/fondo.gif);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  background-color: var(--green2);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Instrucciones */
+.cont-inst {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--greytransp2);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.show-cont-inst {
+  opacity: 1;
+  visibility: visible;
+}
+
+.inst-modal {
+  width: 350px;
+  height: 500px;
+  background: #ffffff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  box-shadow: 0px 0px 5px var(--greytransp);
+  transition: all 0.5s ease;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.show-inst-modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-tittle {
+  width: 306px;
+  height: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--green);
+}
+
+.modal-tittle h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.035em;
+  color: var(--green);
+}
+
+.modal-image {
+  width: 300px;
+  height: 200px;
+}
+
+.modal-image img {
+  width: 100%;
+  height: auto;
+}
+
+.modal-input {
+  width: 300px;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-input p {
+  width: 300px;
+  height: 76px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.035em;
+  color: var(--black);
+}
+
+.modal-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  gap: 60px;
+  width: 296px;
+  height: 46px;
+}
+
+.btn-inst {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  background-color: var(--green2);
+  color: var(--white);
+  border-radius: 50px;
+  border: none;
+  box-shadow: -2px 2px 0px var(--green);
+  transition: all 0.2s ease;
+  transform: scale(1);
+}
+
+.btn-inst:hover {
+  transform: scale(1.1);
+  background-color: var(--green);
+  color: var(--yellow);
+  box-shadow: -2px 2px 0px var(--grey);
+}
+
+.btn-inst:active {
+  transform: scale(0.9);
+  background-color: var(--green3);
+  color: var(--grey);
+  box-shadow: 0px 0px 0px var(--green);
+}
+
+/* Header */
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  top: 0;
+  z-index: 98;
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.seguros {
+  height: 220%;
+  width: auto;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+/* Caja Inicio */
+
+.container {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-logo {
+  width: 90%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.logo {
+  max-width: 900px;
+  width: 90%;
+  height: auto;
+  position: absolute;
+}
+
+/* Botones */
+
+.cont-btn {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  min-width: 250px;
+  text-align: center;
+  background-color: var(--green);
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px 30px;
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s;
+  transform: scale(1);
+  box-shadow: -5px 7px 0px var(--greytransp);
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
+}
+
+.vigilado {
+  height: 260%;
+  width: auto;
+  position: absolute;
+  padding: 20px 20px;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.intelectual {
+  position: absolute;
+  top: -10%;
+  width: 65%;
+  height: auto;
+  justify-self: center;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.vanish {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.logo-bolivar {
+  position: absolute;
+  right: 0;
+  height: 100px;
+  width: auto;
+  align-self: baseline;
+}
+
+/* media query */
+
+@media (min-width: 400px) and (max-width: 850px) {
+  .cont-logo {
+    height: 55%;
+  }
+
+  .cont-btn {
+    height: auto;
+    justify-content: center;
+  }
+}

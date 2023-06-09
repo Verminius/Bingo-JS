@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo | Tarjeton</title>
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/tarjeton.css" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /
+  </head>
+  <body>
+    <!-- Modal -->
+    <div class="cont-modal">
+      <img src="/img/win.png" class="win" alt="" />
+      <div class="text-container">
+        <h2>
+          Toma un pantallazo <br />
+          y envíaselo al <br />
+          administrador de juego
+        </h2>
+      </div>
+      <a class="btn">Volver inicio</a>
+    </div>
+
+    <!--MAIN-->
+    <div class="container animate__animated animate__bounceInUp">
+      <table id="tblBingo"></table>
+      <div class="letter-div">
+        <table id="tblLetter">
+          <tr>
+            <td class="letter-bingo">B</td>
+            <td class="letter-bingo">I</td>
+            <td class="letter-bingo">N</td>
+            <td class="letter-bingo">G</td>
+            <td class="letter-bingo">O</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--FOOTER-->
+    <div class="footer">
+      <img src="/img/bolivar.png" class="logo-bolivar" alt="" />
+    </div>
+    <!-- SCRIPT-->
+    <script src="/js/tarjeton.js" defer></script>
+  </body>
+</html>

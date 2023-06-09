@@ -1,0 +1,21 @@
+:root {
+  --yellow: #ffe16f;
+  --red: #bf4659;
+  --lightGrey: #afafaf;
+  --grey: #4e4d4d;
+  --black: #3c3c3b;
+  --white: #fff;
+  --green: #009056;
+  --green2: #71c93e;
+  --green3: #80c296;
+  --greytransp: rgba(0, 0, 0, 0.25);
+  --greytransp2: rgba(0, 0, 0, 0.6);
+  --whitetransp: rgba(225, 225, 111, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}

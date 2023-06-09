@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <link rel="stylesheet" href="/css/root.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Tómbola | Bingo</title>
+  </head>
+  <body class="body">
+    <div class="mensajeError" id="mensajeError">
+      <img class="imgModal" src="/img/bolatas.png" alt="" />
+      <p id="parrafoError"></p>
+      <button class="btn">Finalizar</button>
+      <a
+        target="_blank"
+        class="btnRegistro"
+        href="https://docs.google.com/forms/d/1T_1OGEdVvgL2uwFQsQJeGHthke34sHtWcdQ5whxjjjg/edit"
+        >Registrar ganador</a
+      >
+    </div>
+    <div class="container animate__animated animate__bounceInDown">
+      <h2>Busca un número y díselo a tus jugadores</h2>
+      <input type="text" id="inputMinimo" placeholder="1" />
+      <input type="text" id="inputMaximo" placeholder="100" />
+      <input type="text" id="inputTotal" disabled class="total" />
+
+      <input type="button" value="Busca un número" id="btn" />
+      <a
+        target="_blank"
+        class="btnRegistro"
+        href="https://docs.google.com/forms/d/1T_1OGEdVvgL2uwFQsQJeGHthke34sHtWcdQ5whxjjjg/edit"
+        >Registrar ganador</a
+      >
+    </div>
+    <div class="num-container animate__animated animate__bounceInUp"></div>
+    <div class="footer">
+      <img src="/img/bolivar.png" alt="" />
+    </div>
+    <script src="/js/codigo.js" charset="utf-8"></script>
+  </body>
+</html>
